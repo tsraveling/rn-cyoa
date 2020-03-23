@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id" : "start",
+      "room" : "This is an open field west of a white house, with a boarded front door. There is a small mailbox here. A rubber mat saying 'Welcome to Zork!' lies by the door.",
+      "doors" : [
+        {
+          "id" : "forest",
+          "choice" : "Go West"
+        },
+        {
+          "id" : "house",
+          "choice" : "Go East"
+        }
+      ]
+    },
+    {
+      "id" : "forest",
+      "room" : "This is a forest, with trees in all directions around you.",
+      "doors" : [
+        {
+          "id" : "start",
+          "choice" : "Go East"
+        }
+      ]
+    },
+    {
+      "id" : "house",
+      "room" : "There is a small mailbox here. A rubber mat saying 'Welcome to Zork!' lies by the door.",
+      "doors" : [
+        {
+          "id" : "start",
+          "choice" : "Go West"
+        },
+        {
+          "id": "mailbox",
+          "choice" : "Open the Mailbox"
+        }
+      ]
+    },
+    {
+      "id" : "mailbox",
+      "room" : "You open the mailbox, revealing a small leaflet.",
+      "doors" : [
+        {
+          "id" : "leaflet",
+          "choice" : "Read the leaflet"
+        },
+        {
+          "id" : "house",
+          "choice" : "Close the mailbox"
+        }
+      ]
+    },
+    {
+      "id" : "dark",
+      "room" : "It is dark. You are likely to be eaten by a grue.",
+      "doors" : [
+        {
+          "id" : "eaten",
+          "choice" : "Run away"
+        }
+      ]
+    },
+    {
+      "id" : "eaten",
+      "room" : "You are eaten by a grue!",
+      "doors" : [
+        {
+          "id" : "start",
+          "choice" : "GAME OVER"
+        }
+      ]
+    },
+    {
+      "id" : "leaflet",
+      "room" : " ZORK is a game of adventure, danger, and low cunning.  In it you will explore some of the most amazing territory ever seen by mortal man.  Hardened adventurers have run screaming from the terrors contained within!",
+      "doors" : [
+        {
+          "id" : "mailbox",
+          "choice" : "Return the leaflet"
+        }
+      ]
+    }
+  ]
+}
